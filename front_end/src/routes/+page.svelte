@@ -24,12 +24,16 @@
         width: 30%;
         padding: 1rem;
         border: 1px solid green;
-        text-align: center;
     }
+
+    .subject h1 {
+        text-align: center;
+    } 
 
     img {
         width: 1000px;
         height: 500px;
         object-fit: cover;
+        position: relative;
     }
 </style>
