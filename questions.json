@@ -1,41 +1,53 @@
 {
+  "Arithmetics":[
+    { "question": "5+4", "answer1":9},
+    { "question": "7+3", "answer1":10},
+    { "question": "3-2", "answer1":1},
+    { "question": "1-4", "answer1":-3},
+    { "question": "5*3", "answer1":15},
+    { "question": "7*9", "answer1":63},
+    { "question": "6/3", "answer1":2},
+    { "question": "27/3", "answer1":9},
+    { "question": "2^5", "answer1":32},
+    { "question": "3^3", "answer1":27}
+  ],
   "Quadratics": [
-    { "question": "x^2 + 2x - 8", "zero1": -4, "zero2": 2 },
-    { "question": "x^2 - 5x + 6", "zero1": 2, "zero2": 3 },
-    { "question": "x^2 + 3x - 4", "zero1": -4, "zero2": 1 },
-    { "question": "x^2 - 3x + 10", "zero1": -2, "zero2": 5 },
-    { "question": "x^2 - x - 6", "zero1": -2, "zero2": 3 },
-    { "question": "x^2 + 4x - 12", "zero1": -6, "zero2": 2 },
-    { "question": "x^2 - 4x + 3", "zero1": 1, "zero2": 3 },
-    { "question": "x^2 - 6x + 8", "zero1": 2, "zero2": 4 },
-    { "question": "x^2 + 3x - 4", "zero1": -4, "zero2": 1 }
+    { "question": "x^2 + 2x - 8", "answer1": -4, "answer2": 2 },
+    { "question": "x^2 - 5x + 6", "answer1": 2, "answer2": 3 },
+    { "question": "x^2 + 3x - 4", "answer1": -4, "answer2": 1 },
+    { "question": "x^2 - 3x + 10", "answer1": -2, "answer2": 5 },
+    { "question": "x^2 - x - 6", "answer1": -2, "answer2": 3 },
+    { "question": "x^2 + 4x - 12", "answer1": -6, "answer2": 2 },
+    { "question": "x^2 - 4x + 3", "answer1": 1, "answer2": 3 },
+    { "question": "x^2 - 6x + 8", "answer1": 2, "answer2": 4 },
+    { "question": "x^2 + 3x - 4", "answer1": -4, "answer2": 1 }
   ],
   "Cubics": [
-    { "question": "x^3 - 2x^2 - x + 2", "zero1": -1, "zero2": 1, "zero3": 2 },
+    { "question": "x^3 - 2x^2 - x + 2", "answer1": -1, "answer2": 1, "answer3": 2 },
     {
       "question": "x^3 + 3x^2 - 4x - 12",
-      "zero1": -4,
-      "zero2": -3,
-      "zero3": 1
+      "answer1": -4,
+      "answer2": -3,
+      "answer3": 1
     },
-    { "question": "x^3 - 6x^2 + 11x - 6", "zero1": 1, "zero2": 2, "zero3": 3 },
-    { "question": "x^3 - 3x^2 - 4x + 12", "zero1": -4, "zero2": 2, "zero3": 3 },
-    { "question": "x^3 - 6x^2 + 9x", "zero1": 0, "zero2": 3, "zero3": 3 },
-    { "question": "x^3 + x^2 - 6x - 6", "zero1": -3, "zero2": 1, "zero3": 2 },
-    { "question": "x^3 - 3x^2 + 3x - 1", "zero1": 1, "zero2": 1, "zero3": 1 },
-    { "question": "x^3 - 4x^2 + 4x", "zero1": 0, "zero2": 2, "zero3": 2 },
+    { "question": "x^3 - 6x^2 + 11x - 6", "answer1": 1, "answer2": 2, "answer3": 3 },
+    { "question": "x^3 - 3x^2 - 4x + 12", "answer1": -4, "answer2": 2, "answer3": 3 },
+    { "question": "x^3 - 6x^2 + 9x", "answer1": 0, "answer2": 3, "answer3": 3 },
+    { "question": "x^3 + x^2 - 6x - 6", "answer1": -3, "answer2": 1, "answer3": 2 },
+    { "question": "x^3 - 3x^2 + 3x - 1", "answer1": 1, "answer2": 1, "answer3": 1 },
+    { "question": "x^3 - 4x^2 + 4x", "answer1": 0, "answer2": 2, "answer3": 2 },
     {
       "question": "x^3 + 2x^2 - 8x - 16",
-      "zero1": -4,
-      "zero2": -2,
-      "zero3": 2
+      "answer1": -4,
+      "answer2": -2,
+      "answer3": 2
     },
-    { "question": "x^3 - 2x^2 - x + 2", "zero1": -1, "zero2": 1, "zero3": 2 },
+    { "question": "x^3 - 2x^2 - x + 2", "answer1": -1, "answer2": 1, "answer3": 2 },
     {
       "question": "Quadratics",
-      "zero1": "x^2 - 5x + 6",
-      "zero2": 2,
-      "zero3": 3
+      "answer1": "x^2 - 5x + 6",
+      "answer2": 2,
+      "answer3": 3
     }
   ]
 }
