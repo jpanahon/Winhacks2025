@@ -1,16 +1,3 @@
-<script>
-    let data;
-
-    async function fetchData() {
-        const res = await fetch("http://127.0.0.1:8080/api/hello");
-        data = await res.json();
-    }
-
-    fetchData();
-</script>
-
-<h1>{data?.message}</h1>
-
 <section id="subjects">
     <section class="subject">
         <img src="English.jpg" alt="English">
@@ -22,7 +9,7 @@
     </section>
     <section class="subject">
         <img src="Computer Science.jpg" alt="English">
-        <h1>Computer Science</h1>
+        <h1 style="font-size: 19px">Computer Science</h1>
     </section>
 </section>
 
@@ -53,8 +40,8 @@
     } 
 
     img {
-        width: 1000px;
-        height: 500px;
+        width: 500px;
+        height: 300px;
         object-fit: cover;
         position: relative;
     }
