@@ -4,14 +4,15 @@
 </script>
 
 <header>
-	<div id="profle-panel" style="float: right">
+	<h1 style="text-align: center; display: inline-block;">Study Games</h1>
+	<div id="profile-panel">
 		<p>
 			<img src="agent47.png" width="32px" height="32px" alt="profile picture" style="float: left; border-radius: 50%;">
 			Morose
 		</p>
-		<p>
+		<sub>
 			Level 1
-		</p>
+		</sub>
 	</div>
 </header>
 {@render children()}
@@ -21,5 +22,9 @@
 		width: 100%;
 		height: 5rem;
 		padding: 1rem;
+	}
+
+	#profile-panel {
+		float: right;
 	}
 </style>
