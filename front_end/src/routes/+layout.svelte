@@ -8,11 +8,11 @@
 	<div id="profile-panel">
 		<p>
 			<img src="agent47.png" width="32px" height="32px" alt="profile picture" style="float: left; border-radius: 50%;">
-			Morose
+			Morose <br>
+			<a style="font-size: 13px; margin: 0">
+				Level 1
+			</a>
 		</p>
-		<sub>
-			Level 1
-		</sub>
 	</div>
 </header>
 {@render children()}
