@@ -5,10 +5,10 @@ const connection = mysql.createConnection({
     host: 'localhost',  // Change to your database host (e.g., 'localhost' or an IP address)
     user: 'root',       // Your MariaDB username
     password: 'Coffee99', // Your MariaDB password
-    database: 'winhacks2025db'  // The name of the database you want to use
+    database: 'userDatabase'  // The name of the database you want to use
 });
 
-function insertinfo(number) {
+function insertinfo() {
     connection.connect((err) => {
         if (err) {
             console.error('Error connecting to the database:', err.stack);
@@ -19,10 +19,10 @@ function insertinfo(number) {
 
 
     for (let i = 0; i < 10; i++) {
-        let obj = readMath("Arithmetics", i);
+        let obj = readMath("Quadratics", i);
 
         const query = 'INSERT INTO mathquestions (Level, QuestionNumber, Question, Answer) VALUES (?, ?, ?, ?)';
-        connection.execute(query, [(number+1), i, obj[0], obj[1]], (err, results) => {
+        connection.execute(query, [2, i+11, obj["question"], ((obj["answer1"]).toString()).concat(",",(obj["answer2"]).toString())], (err, results) => {
             if (err) {
                 console.error('Error executing query:', err.stack);
                 return;
@@ -56,4 +56,4 @@ console.log(readMath("Quadratics", 3));
 
 
 
-insertinfo(0);
+insertinfo();
