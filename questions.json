@@ -18,6 +18,7 @@
     { "question": "x^2 - 3x + 10", "answer1": -2, "answer2": 5 },
     { "question": "x^2 - x - 6", "answer1": -2, "answer2": 3 },
     { "question": "x^2 + 4x - 12", "answer1": -6, "answer2": 2 },
+    { "question": "x^2 - 6x + 9", "answer1": 3, "answer2": 3 },
     { "question": "x^2 - 4x + 3", "answer1": 1, "answer2": 3 },
     { "question": "x^2 - 6x + 8", "answer1": 2, "answer2": 4 },
     { "question": "x^2 + 3x - 4", "answer1": -4, "answer2": 1 }
@@ -42,12 +43,6 @@
       "answer2": -2,
       "answer3": 2
     },
-    { "question": "x^3 - 2x^2 - x + 2", "answer1": -1, "answer2": 1, "answer3": 2 },
-    {
-      "question": "Quadratics",
-      "answer1": "x^2 - 5x + 6",
-      "answer2": 2,
-      "answer3": 3
-    }
+    { "question": "x^3 - 2x^2 - x + 2", "answer1": -1, "answer2": 1, "answer3": 2 }
   ]
 }
