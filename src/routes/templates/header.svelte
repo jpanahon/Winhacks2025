@@ -11,7 +11,7 @@
         </h1>
         <div id="profile-panel">
             <div id="profile-info">
-                <img src="/agent47.png" width="32px" height="32px" alt="" id="profile-img">
+                <img src="/default.jpg" width="32px" height="32px" alt="" id="profile-img">
                 <div id="profile-text">
                     <p>Morose</p>
                     <a href="./leaderboard" style="font-size: 13px; margin: 0">Level 1</a>

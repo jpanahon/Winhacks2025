@@ -28,7 +28,7 @@
     </section>
     
     <section id="progress">
-        <h1> Progress to Next Level: </h1>
+        <h1> Progress to Next Level </h1>
         <div id="progress-border">
             <div id="progress-bar">
                 <p id="progress-bar-text">25/100</p>
@@ -78,7 +78,7 @@
     #progress-bar {
         background-color: darkgreen;
         width: 25%;
-        height: 1rem;
+        height: 0.8rem;
     }
 
     #progress-bar-text {
@@ -88,6 +88,7 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 14px;
     }
 
     .subject:hover{
