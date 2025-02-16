@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: coffee99
+      MYSQL_DATABASE: wh2025
+      MYSQL_USER: gbean
+      MYSQL_PASSWORD: 00ff00bean
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  sveltekit:
+    build: .
+    container_name: sveltekit
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - mariadb
+    environment:
+      DB_HOST: 00ff00bean
+      DB_USER: gbean
+      DB_PASS: 00ff00bean
+      DB_NAME: wh2025
+
+volumes:
+  mariadb_data:
