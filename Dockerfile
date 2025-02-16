@@ -12,10 +12,10 @@ RUN npm install
 COPY . .
 
 # Build the SvelteKit app
-RUN npm run build --expose
+RUN npm run build 
 
 # Expose the port (default for SvelteKit)
 EXPOSE 5173
 
 # Start the SvelteKit app
-CMD ["npm", "run", "dev"]
+RUN npm run dev -- -p 5173
