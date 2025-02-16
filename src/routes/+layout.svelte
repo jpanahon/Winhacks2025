@@ -7,11 +7,11 @@
 	<h1 style="text-align: center; display: inline-block;">Study Games</h1>
 	<div id="profile-panel">
 		<p>
-			<img src="agent47.png" width="32px" height="32px" alt="profile picture" style="float: left; border-radius: 50%;">
+			<img src="default.jpg" width="32px" height="32px" alt="profile picture">
 			Morose <br>
-			<a style="font-size: 13px; margin: 0">
-				Level 1
-			</a>
+		</p>
+		<p style="font-size: 13px;">
+			Level 1
 		</p>
 	</div>
 </header>
@@ -27,5 +27,11 @@
 
 	#profile-panel {
 		float: right;
+	}
+
+	#profile-panel img {
+		float: left;
+		border-radius: 50%;
+		margin-right: 0.5rem;
 	}
 </style>

@@ -9,12 +9,12 @@
     </section>
     <section class="subject">
         <img src="Computer Science.jpg" alt="English">
-        <h1 style="font-size: 19px">Computer Science</h1>
+        <h1 style="font-size: 17.5px">Computer Science</h1>
     </section>
 </section>
 
 <section id="progress">
-    <h1> Progress to Next Level: </h1>
+    <h1> Progress to Next Level </h1>
     <div id="progress-border">
         <div id="progress-bar">
             <p id="progress-bar-text">25/100</p>
@@ -26,11 +26,10 @@
     #subjects {
         width: 50%;
         margin: 0 auto;
-        vertical-align: middle;
     }
     .subject {
         display: inline-block;
-        width: 30%;
+        width: 32.5%;
         padding: 1rem;
         border: 1px solid green;
     }
@@ -63,7 +62,7 @@
     #progress-bar {
         background-color: darkgreen;
         width: 25%;
-        height: 1rem;
+        height: 0.8rem;
     }
 
     #progress-bar-text {
@@ -73,5 +72,6 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 12px;
     }
 </style>
