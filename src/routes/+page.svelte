@@ -1,26 +1,41 @@
-<section id="subjects">
-    <section class="subject">
-        <img src="English.jpg" alt="English">
-        <h1>English</h1>
-    </section>
-    <section class="subject">
-        <img src="Math.jpg" alt="English">
-        <h1>Math</h1>
-    </section>
-    <section class="subject">
-        <img src="Computer Science.jpg" alt="English">
-        <h1 style="font-size: 19px">Computer Science</h1>
-    </section>
-</section>
+<script lang="ts">
+	import Header from './templates/header.svelte'
+	import '../app.css';
+</script>
 
-<section id="progress">
-    <h1> Progress to Next Level: </h1>
-    <div id="progress-border">
-        <div id="progress-bar">
-            <p id="progress-bar-text">25/100</p>
+<Header />
+
+<main>
+    <section id="subjects">
+        <a href="courses/english">
+        <div class="subject">
+            <img src="English.jpg" alt="English">
+            <h1>English</h1>
         </div>
-    </div>
-</section>
+        </a>
+        <a href="courses/math">
+        <div class="subject">
+            <img src="Math.jpg" alt="English">
+            <h1>Math</h1>
+        </div>
+        </a>
+        <a href="courses/comp">
+        <div class="subject">
+            <img src="Computer Science.jpg" alt="English">
+            <h1 style="font-size: 19px">Computer Science</h1>
+        </div>
+    </a>
+    </section>
+    
+    <section id="progress">
+        <h1> Progress to Next Level: </h1>
+        <div id="progress-border">
+            <div id="progress-bar">
+                <p id="progress-bar-text">25/100</p>
+            </div>
+        </div>
+    </section>    
+</main>
 
 <style>
     #subjects {
