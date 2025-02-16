@@ -89,4 +89,8 @@
         top: 50%;
         transform: translateY(-50%);
     }
+
+    .subject:hover{
+        transform:scale(1.05);
+    }
 </style>
