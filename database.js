@@ -19,10 +19,10 @@ function insertinfo() {
 
 
     for (let i = 0; i < 10; i++) {
-        let obj = readMath("Quadratics", i);
+        let obj = readMath("Arithmetics", i);
 
         const query = 'INSERT INTO mathquestions (Level, QuestionNumber, Question, Answer) VALUES (?, ?, ?, ?)';
-        connection.execute(query, [2, i+11, obj["question"], ((obj["answer1"]).toString()).concat(",",(obj["answer2"]).toString())], (err, results) => {
+        connection.execute(query, [1, i+1, obj["question"], obj["answer1"]], (err, results) => {
             if (err) {
                 console.error('Error executing query:', err.stack);
                 return;
@@ -39,7 +39,7 @@ function insertinfo() {
 function writeQuestions(question, answer1, answer2, answer3) {
     let data = fs.readFileSync("questions.json", 'utf8');
     var obj = JSON.parse(data);
-    obj['Cubics'].push({ "question": question, "answer1": zero1, "answer2": zero2, "answer3": zero3 });
+    obj['Cubics'].push({ "question": question, "answer1": answer1, "answer2": answer2, "answer3": answer3 });
     fs.writeFileSync("questions.json", JSON.stringify(obj), 'utf8');
 
 }
