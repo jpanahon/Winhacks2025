@@ -19,10 +19,10 @@ function insertinfo() {
 
 
     for (let i = 0; i < 10; i++) {
-        let obj = readMath("Arithmetics", i);
+        let obj = readMath("Cubics", i);
 
         const query = 'INSERT INTO mathquestions (Level, QuestionNumber, Question, Answer) VALUES (?, ?, ?, ?)';
-        connection.execute(query, [1, i+1, obj["question"], obj["answer1"]], (err, results) => {
+        connection.execute(query, [3, i+21, obj["question"], ("").concat(obj["answer1"],",",obj["answer2"],",",obj["answer3"])], (err, results) => {
             if (err) {
                 console.error('Error executing query:', err.stack);
                 return;
