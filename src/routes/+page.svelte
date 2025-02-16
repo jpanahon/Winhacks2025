@@ -90,4 +90,8 @@
         transform: translateY(-50%);
         font-size: 14px;
     }
+
+    .subject:hover{
+        transform:scale(1.05);
+    }
 </style>
