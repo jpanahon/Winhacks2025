@@ -1,3 +1,9 @@
+<script lang="ts">
+    import Header from '../header.svelte'
+</script>
+
+<Header></Header>
+
 <section>
     <h1 style="text-align: center;">Log In</h1>
     <form>

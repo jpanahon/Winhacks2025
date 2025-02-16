@@ -1,3 +1,9 @@
+<script lang="ts">
+    import Header from '../header.svelte'
+</script>
+
+<Header></Header>
+
 <h1>
     Leaderboard <br>
     <sub>You are # on the leaderboard</sub>
