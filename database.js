@@ -35,6 +35,16 @@ function insertinfo() {
     connection.end();
 }
 
+function getInfo(){
+    connection.query('SELECT * FROM mathquestions', (err, results, fields) => {
+        if (err) {
+            console.error('Error executing query:', err);
+            return;
+        }
+        console.log('Query results:', results);
+    });
+}
+
 
 function writeQuestions(question, answer1, answer2, answer3) {
     let data = fs.readFileSync("questions.json", 'utf8');
@@ -51,9 +61,8 @@ function readMath(question, number) {
 
 }
 
-console.log(readMath("Quadratics", 3));
+//console.log(readMath("Quadratics", 3));
 //writeQuestions("Quadratics", "x^2 - 5x + 6", 2, 3);
 
-
-
-insertinfo();
+//insertinfo();
+getInfo();
